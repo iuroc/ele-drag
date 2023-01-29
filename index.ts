@@ -1,7 +1,7 @@
 /**
  * 拖拽移动元素
  * @author 欧阳鹏
- * @version 1.0.0
+ * @version 1.0.1
  * @link https://apee.top
  */
 class EleDrag implements IConfig {
