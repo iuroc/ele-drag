@@ -1,7 +1,7 @@
 /**
  * 拖拽移动元素
  * @author 欧阳鹏
- * @version 1.0.1
+ * @version 1.0.2
  * @link https://apee.top
  */
 class EleDrag implements IConfig {
@@ -26,7 +26,7 @@ class EleDrag implements IConfig {
     constructor(
         target: HTMLElement,
         view: HTMLElement | Window = window,
-        limitOut: boolean = false
+        limitOut: boolean = true
     ) {
         this.view = (view || window) as HTMLElement
         this.target = target
@@ -35,6 +35,7 @@ class EleDrag implements IConfig {
         this.target.style.left = this.target.offsetLeft + 'px'
         this.target.style.top = this.target.offsetTop + 'px'
         this.target.style.margin = '0'
+        this.target.style.userSelect = 'none'
         this.target.addEventListener('mousedown', (event) => {
             this.startOffsetLeft = this.target.offsetLeft
             this.startOffsetTop = this.target.offsetTop

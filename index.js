@@ -1,7 +1,7 @@
 /**
  * 拖拽移动元素
  * @author 欧阳鹏
- * @version 1.0.0
+ * @version 1.0.2
  * @link https://apee.top
  */
 var EleDrag = /** @class */ (function () {
@@ -12,7 +12,7 @@ var EleDrag = /** @class */ (function () {
      */
     function EleDrag(target, view, limitOut) {
         if (view === void 0) { view = window; }
-        if (limitOut === void 0) { limitOut = false; }
+        if (limitOut === void 0) { limitOut = true; }
         var _this = this;
         this.view = (view || window);
         this.target = target;
@@ -21,6 +21,7 @@ var EleDrag = /** @class */ (function () {
         this.target.style.left = this.target.offsetLeft + 'px';
         this.target.style.top = this.target.offsetTop + 'px';
         this.target.style.margin = '0';
+        this.target.style.userSelect = 'none';
         this.target.addEventListener('mousedown', function (event) {
             _this.startOffsetLeft = _this.target.offsetLeft;
             _this.startOffsetTop = _this.target.offsetTop;
