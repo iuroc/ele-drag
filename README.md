@@ -27,6 +27,6 @@
 constructor(
     target: HTMLElement,
     view: HTMLElement | Window = window,
-    limitOut: boolean = false
+    limitOut: boolean = true
 )
 ```
