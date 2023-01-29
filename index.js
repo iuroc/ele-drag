@@ -1,4 +1,9 @@
-/** 拖拽移动元素 */
+/**
+ * 拖拽移动元素
+ * @author 欧阳鹏
+ * @version 1.0.0
+ * @link https://apee.top
+ */
 var EleDrag = /** @class */ (function () {
     /**
      * @param target 被拖拽元素
