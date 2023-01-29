@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素拖拽修改位置</title>
+    <style>
+        .move {
+            font-size: 30px;
+            width: 300px;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="move">拖拽我看看</button>
+    <script src="./index.js"></script>
+    <script>
+        const ele = document.querySelector('.move')
+        new EleDrag(ele, window, true)
+    </script>
+</body>
+
+</html>
