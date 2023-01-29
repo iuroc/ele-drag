@@ -7,7 +7,7 @@
 
 ## 使用方法
 
-1. 使用 `<script src="script.js">` 导入库文件
+1. 使用 `<script src="script.js">` 导入库文件（[CDN&nbsp;地址](https://cdn.jsdelivr.net/gh/oyps/ele-drag/index.js)）
 2. 增加拖拽功能，`.move` 是需要拖拽的元素
 
     ```js
